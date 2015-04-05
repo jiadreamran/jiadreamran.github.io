@@ -386,10 +386,10 @@
                             var endTime = new Date(2011, 9, 19, 23, 0, 0, 0);
                             //startTime = new Date(2011, 9, 1, 0, 0, 0, 0);
                             //endTime = new Date(2011, 10, 31, 23, 0, 0, 0);
-                            timeExtent.loop = true;
                             timeExtent.startTime = startTime;
                             timeExtent.endTime = endTime;
                             timeSlider.setThumbCount(2);
+                            timeExtent.setLoop(true);
                             timeSlider.createTimeStopsByTimeInterval(timeExtent, 1, "esriTimeUnitsHours");
                             //timeSlider.createTimeStopsByTimeInterval(timeExtent, 24, "esriTimeUnitsHours");
                             timeSlider.setThumbIndexes([0, 1]);
